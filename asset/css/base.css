@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+body {
+    color: #333;
+    padding: 0;
+    margin: 0;
+
+}
+body {
+    overflow-y: scroll;
+    background: #fff;
+    padding-bottom: 75px;   
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.left {
+    display: flex;
+   
+   
+}
+button {
+    cursor: pointer;
+    margin: 0;
+}
+
+.sc-classic {
+    background-image: url(../img/bg/download.png);
+    background-repeat: repeat-y;
+    background-size: 50% 0;
+}
+.header {
+    width: 100%;
+    height: 46px;
+
+}
+
+.fixed {
+    position: fixed;
+
+}
+.g-z-index-header {
+    z-index: 1000;
+
+}
+.g-dark {
+    background: #999;
+}
+.g-dark a {
+    color: #ccc;
+}
+.l-container {
+    width: 1240px;
+    margin: 0 auto;
+}
+/* .left {
+    float: left;
+} */
+
+/* before */
+.l-container::before,
+.l-container::after {
+    content: "";
+    display: table;
+}
+.l-container::after{
+    clear: both;
+}
+
+.sc-clearfix::before,
+.sc-clearfix::after {
+    content: "";
+    display: table;
+}
+.sc-clearfix::after {
+    clear: both;
+}
+
+/* end */
+
+
+/* an hien */
+
+.show .header__search,
+.show .header-right {
+    display: block;
+    visibility: visible;
+}
+.header__search,
+.header-right{
+    display: none;
+    visibility: hidden;
+}
